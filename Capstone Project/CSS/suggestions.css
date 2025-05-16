@@ -1,0 +1,140 @@
+/* Suggestion card container styling */
+#suggestion-card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+
+#suggestions-section {
+    border: 2px solid black;
+    padding: 1rem;
+}
+
+/* Suggestion card styling */
+#suggestions-section .suggestion-card-title {
+  font-family: 'Caveat';
+  font-size: 1.3rem;
+  color: #444; 
+  text-align: center;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.suggestion-card-title {
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+  letter-spacing: 0.5px;
+  word-wrap: break-word;
+  hyphens: auto;
+}
+
+/* Suggestion heading animation styling */
+
+@keyframes fancyFadeScale {
+  0% {
+    opacity: 0;
+    transform: translateY(10px) scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.animate-fancyFadeScale {
+  animation: fancyFadeScale 0.5s ease forwards;
+  animation-fill-mode: forwards; /* Keep the final state */
+  animation-iteration-count: 1; /* Only run once */
+  will-change: opacity, transform, letter-spacing;
+}
+
+
+.suggestion-card {
+  opacity: 0;
+  transform: translateY(10px) scale(0.95);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 1rem;
+  padding-bottom: 0;
+}
+
+
+.suggestion-card:hover {
+  transform: translateY(-8px) scale(1.05);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.25);
+  z-index: 10; /* So it pops above other cards */
+}
+
+.suggestion-card img {
+  transition: transform 0.3s ease;
+  object-fit: cover;
+  height: 8rem;
+  width: 100%;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.suggestion-card:hover img {
+  transform: scale(1.1);
+  filter: brightness(80%);
+}
+
+#suggestion-heading-container {
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+}
+
+
+
+/* Sticky note style for Chef's Favourite */
+
+.pin-icon {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(50%) rotate(20deg);
+  color: rgb(187, 46, 46);
+  font-size: 1.5rem;
+  z-index: 10;
+}
+
+
+.chefs-favourite-note {
+  background-color: #fff475; 
+  transform: rotate(-2deg);
+  border: 1px solid #f7d560;
+  font-family: "Playpen Sans Thai", cursive;
+  font-weight: 500;
+  font-style: normal;
+  position: relative;
+  overflow: visible; 
+
+  width: 220px; /* You can tweak this */
+  height: 280px; /* Makes it more square-ish */
+  padding: 1rem;
+  box-shadow:
+    0 12px 25px rgba(0, 0, 0, 0.5),
+    0 6px 12px rgba(0, 0, 0, 0.4),
+    0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+#chefs-favourite-heading {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+
+#meal-image {
+  max-height: 100px; /* Prevent overly tall images */
+  object-fit: cover;
+  width: 100%;
+}
+
+#meal-name {
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+
+
+

@@ -1,0 +1,13 @@
+/* Clear-orders button styling */
+#clear-orders {
+  margin-left: 2rem;
+  font-size: 0.74rem;   
+  padding: 0.25rem 0.5rem;  
+  }
+
+  /* Incomplete orders section styling */
+#incomplete-orders-section {
+    margin-top: 10rem;
+}
+
+

@@ -1,0 +1,31 @@
+
+    body {
+      background-color: #f0f2f5;
+    }
+
+    body, h3, p, input, button {
+      font-family: "Playpen Sans Thai", cursive;
+    }
+    .hero {
+      padding: 60px 0;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 4.5rem;
+      font-weight: 700;
+      color: #343a40;
+      font-family: 'Caveat';
+    }
+
+
+    /* Ingredient form styling */
+    #ingredient-form {
+      border: 2px solid black;
+      padding: 1rem;
+      border-radius: 0.5rem;
+      background-color: white;
+    }
+
+    
+  
